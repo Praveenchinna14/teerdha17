@@ -1,0 +1,89 @@
+{% extends 'dashboard_templates/admin.html' %}
+{% block main_content %}
+
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                <style>
+                  
+            
+                 
+                  .custom-table {
+        width: 90%;
+        border-collapse: separate;
+        border-spacing: 0 8px;
+        
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        padding-left: 280px;
+    }
+    .custom-table th,
+    .custom-table td {
+        padding: 10px 15px;
+        border: none;
+    }
+    .custom-table th {
+        background-color: #2c3e50;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 8px 8px 0 0;
+    }
+    .custom-table td {
+        background-color: #f2f2f2;
+        color: #333;
+        font-size: 25px;
+        border-radius: 0 0 8px 8px;
+    }
+    .custom-table tr:hover td {
+        background-color: #e0e0e0;
+    }
+                  
+            .sr{
+                padding-left: 300px;
+            }
+            .url{
+                text-decoration: none;
+            }
+                    
+                   
+                </style>
+            </head>
+            <body><br>
+
+                <h2 class="sr">Hotels 2nd Pages:</h2><br>            
+          
+            
+                
+            
+                <table class="custom-table">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>OFFER </th>
+                        <th>Insert URL</th>
+                        <th>Update URL</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for i in upt %}
+                    <tr>
+                        <td>{{i.id}}</td>
+                        <td>{{i.offer}}</td>
+                        <td><a href="{{i.inserturl}}" class="url">Terms&Policys Insert</a></td>
+                        <td><a href="{{i.updateurl}}" class="url">Terms&Policys Update</a></td>
+                        
+                       
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            
+        </body>
+    </html>         
+
+{% endblock main_content %}

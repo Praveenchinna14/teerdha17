@@ -1,0 +1,84 @@
+{% extends 'dashboard_templates/admin.html' %}
+{% block main_content %}
+
+
+
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                <style>
+                  
+            
+                 
+table {
+            width: 1000px;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            border-radius: 10px;
+            margin: 0;
+            height: 300px;
+            margin-left: 300px;
+
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        td {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        tr:last-child td {
+            border-bottom: none;;
+        }
+                  
+            .sr{
+                padding-left: 300px;
+            }
+                    
+                   
+                </style>
+            </head>
+            <body><br>
+
+                <h2 class="sr">cab offers:</h2><br>            
+        
+                <table border="1">
+                    <tr>
+                        <th>ID</th>
+                        <th>OFFER</th>
+                        <!-- <th>url_insert</th> -->
+                        <th>offer_data</th>
+                        <th>url_update</th>
+                        <th>url_insert</th>
+                        
+                    </tr>
+                    {% for i in up %}
+                    <tr>
+                        <td>{{i.id}}</td>
+                        <td>{{i.offer}}</td>
+                        <!-- <td><a href="{{i.url_insert}}">{{i.url_insert}}</a></td> -->
+                        <td>{{i.offer_data}}</td>
+                        <td><a href="{{i.url_update}}">{{i.url_update}}</a></td>
+                        <td><a href="{{i.url_insert}}">{{i.url_insert}}</a></td>
+
+                        
+                       
+                    </tr>
+                    {% endfor %}
+                </table>
+            
+        </body>
+    </html>         
+
+{% endblock main_content %}

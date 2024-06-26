@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Flights data</title>
+    </head>
+    <body>
+        <form method="post">{% csrf_token %}
+            <div class="form_group">
+               <label>flight_offer</label>
+               <input type="text" name="offer" >
+            </div>
+            <div class="form_group">
+               <label>insert_url</label>
+               <input type="text" name="inserturl" required>
+            </div>
+            <div class="form_group">
+                <label>update_url</label>
+                <input type="text" name="updateurl" required>
+             </div>
+            <input type="submit" class="btn btn-primary">
+           </form>
+    </body>
+</html>

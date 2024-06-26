@@ -1,0 +1,62 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    </head>
+    <style>
+        
+        .sidebar {
+            width: 200px;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 8px 0;
+        }
+        .sidebar ul li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+        .sidebar ul li ul {
+            display: none;
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        .sidebar ul li:hover ul {
+            display: block;
+        }
+    </style>
+<body>
+    <div class="sidebar">
+        <ul>
+            {% for item in nav_item %}
+            <li class="nav-item">
+                <a><i class="{{ item.icon }}"></i>{{ item.title }}</a>
+            <ul>
+                {% for i in Sidebar %}
+                   {% if item.title  == i.category %}
+                       <li class="nav-item">
+                        <a href="{{i.url}}">{{i.title}}</a>
+                       </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            </li>
+            {% endfor %}
+            
+        </ul>
+
+    </div>
+</body>
+
+
+
+
+
