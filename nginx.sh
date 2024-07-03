@@ -15,4 +15,4 @@ echo "Nginx has been started"
 
 sudo systemctl status nginx.service
 
-gunicorn Terrdhaproject.wsgi:application -b localhost:8000 &
+gunicorn Teerdhaproject.wsgi:application -b localhost:8000 &
