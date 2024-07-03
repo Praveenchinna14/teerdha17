@@ -58,7 +58,7 @@ typing-extensions
 tzlocal
 urllib3
 whitenoise
-wheel
+wheel==0.43.0
 xlrd
 xlwt
 yapf
