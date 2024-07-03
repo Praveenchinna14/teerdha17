@@ -14,3 +14,5 @@ sudo systemctl restart nginx.service
 echo "Nginx has been started"
 
 sudo systemctl status nginx.service
+
+gunicorn Terrdhaproject.wsgi:application -b localhost:8000 &
