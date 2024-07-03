@@ -73,7 +73,7 @@ def faq_home(request):
 def flights(request):
     if request.method=="GET":
         nav=navbar.objects.all()
-        ad=requests.get("http://127.0.0.1:8000/flight_home/")
+        ad=requests.get("http://13.232.134.82:8000/flight_home/")
         res=ad.json()
         k3 = flightfaqs.objects.all()
         wc = requests.get("http://127.0.0.1:8000/why_choose_lc/")
