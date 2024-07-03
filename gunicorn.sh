@@ -5,7 +5,7 @@ cd /var/lib/jenkins/workspace/teerdha17
 $PWD
 
 source praveen/bin/activate
-pip3 install gunicorn
+pip install gunicorn
 
 python3 manage.py makemigrations
 python3 manage.py migrate
