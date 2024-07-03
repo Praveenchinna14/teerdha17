@@ -24,7 +24,7 @@ class bus_update(generics.RetrieveUpdateDestroyAPIView):
 def bus_main(request):
     if request.method=="GET":
         nav=navbar.objects.all()
-        ad=requests.get("http://127.0.0.1:8000/bus_home/")
+        ad=requests.get("http://13.232.134.82:8000/bus_home/")
         res=ad.json()
         k2= bus_whychoose.objects.all()
         k1= bus_faq.objects.all()
