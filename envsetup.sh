@@ -30,12 +30,12 @@ echo $PWD
 echo -e "\n\n\n"
 
 echo "Activating the virtual environment"
-source praveen/bin/activate
+source /var/lib/jenkins/worksapce/praveen/bin/activate
 echo -e "\n\n\n"
 
 echo -e "\n\n\n"
 echo "Installing Requirements...."
-pip3 install -r requirements.txt
+pip3 install -r /var/lib/jenkins/workspace requirements.txt
 echo "Requirements Installed."
 echo -e "\n\n\n"
 
