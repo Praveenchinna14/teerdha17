@@ -9,7 +9,7 @@ Group=jenkins
 WorkingDirectory=/var/lib/jenkins/workspace/teerdha17/
 ExecStart=/var/lib/jenkins/workspace/teerdha17/praveen/bin/gunicorn \
           --workers 3 \
-          --bind unix:/run/gunicorn.sock/ \
+          --bind 127.0.0.1:8000 \
           Teerdhaproject.wsgi:application
 
 [Install]
