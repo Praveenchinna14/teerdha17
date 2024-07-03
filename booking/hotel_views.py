@@ -13,7 +13,7 @@ def hotelform(request):
     nav=navbar.objects.all()
 
     if request.method=="GET":
-        cl=requests.get("http://127.0.0.1:8000/cardsapi/")
+        cl=requests.get("http://13.232.134.82:8000/cardsapi/")
         res=cl.json()
     
         return render(request,"hotel_templates/searchform.html",{'nav':nav,'res':res,'k':k,'k1':k1})
