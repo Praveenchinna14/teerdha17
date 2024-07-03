@@ -14,6 +14,7 @@ else
     sudo apt install libmysqlclient-dev -y
     sudo apt install pkg-congif -y
     pip install wheel
+    pip install config_pkg
 fi
 
     python3 -m venv praveen
