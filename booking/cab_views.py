@@ -33,8 +33,8 @@ class cab_update(generics.RetrieveUpdateDestroyAPIView):
 def cab_main(request):
     nav=navbar.objects.all()
     if request.method=="GET":
-        ad=requests.get("http://13.232.134.82:8000/cab_insert/")
-        res=ad.json()
+        #ad=requests.get("http://13.232.134.82:8000/cab_insert/")
+        res=cab_cards.objects.all() #ad.json()
         k3 = cabwhycontents.objects.all()
         b = cab_faq.objects.all()
         return render(request,"cab_templates/cabsearch.html",{'nav':nav,'res':res,'k3':k3,'b':b})
@@ -52,8 +52,8 @@ class festive_update(generics.RetrieveUpdateDestroyAPIView):
     
 def festive_main(request):
     if request.method == "GET":
-        ad = requests.get("http://127.0.0.1:8000/festive_insert/")
-        res = ad.json()
+        #ad = requests.get("http://127.0.0.1:8000/festive_insert/")
+        res = cab_festive.objects.all() #ad.json()
         return render(request, "cab_templates/festive.html", {'res': res})
 
 
@@ -71,8 +71,8 @@ class rental_update(generics.RetrieveUpdateDestroyAPIView):
 
 def rental_main(request):
     if request.method == "GET":
-        ad = requests.get("http://127.0.0.1:8000/rental_insert/")
-        res = ad.json()
+        #ad = requests.get("http://127.0.0.1:8000/rental_insert/")
+        res = cab_rental.objects.all() #ad.json()
         return render(request, "cab_templates/rental_card.html", {'res': res})
 
 
