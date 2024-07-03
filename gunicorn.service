@@ -10,7 +10,7 @@ WorkingDirectory=/var/lib/jenkins/workspace/django/
 ExecStart=/var/lib/jenkins/workspace/django/praveen/bin/gunicorn \
           --workers 3 \
           --bind unix:/run/gunicorn.sock/ \
-          django_web_app.wsgi:application
+          Teerdhaproject.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
