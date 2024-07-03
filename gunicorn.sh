@@ -5,6 +5,7 @@ cd /var/lib/jenkins/workspace/teerdha17
 $PWD
 
 source praveen/bin/activate
+pip install django
 pip install gunicorn
 
 python3 manage.py makemigrations
