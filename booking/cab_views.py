@@ -33,7 +33,7 @@ class cab_update(generics.RetrieveUpdateDestroyAPIView):
 def cab_main(request):
     nav=navbar.objects.all()
     if request.method=="GET":
-        ad=requests.get("http://127.0.0.1:8000/cab_insert/")
+        ad=requests.get("http://13.232.134.82:8000/cab_insert/")
         res=ad.json()
         k3 = cabwhycontents.objects.all()
         b = cab_faq.objects.all()
