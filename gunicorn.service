@@ -6,8 +6,8 @@ After=network.target
 [Service]
 User=jenkins
 Group=jenkins
-WorkingDirectory=/var/lib/jenkins/workspace/django/
-ExecStart=/var/lib/jenkins/workspace/django/praveen/bin/gunicorn \
+WorkingDirectory=/var/lib/jenkins/workspace/teerdha17/
+ExecStart=/var/lib/jenkins/workspace/teerdha17/praveen/bin/gunicorn \
           --workers 3 \
           --bind unix:/run/gunicorn.sock/ \
           Teerdhaproject.wsgi:application
