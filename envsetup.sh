@@ -38,11 +38,6 @@ echo "Installing Requirements...."
 pip3 install -r requirements.txt
 echo "Requirements Installed."
 echo -e "\n\n\n"
-pip install --upgrade pip setuptools
-pip install wheel
-pip wheel --wheel-dir=/tmp/wheelhouse --no-cache-dir -r requirements.txt
-pip wheel --verbose --wheel-dir=/tmp/wheelhouse --no-cache-dir -r requirements.txt
-
 
 echo "Checking for logs"
 if [ -d "logs" ]
