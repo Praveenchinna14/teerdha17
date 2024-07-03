@@ -11,6 +11,9 @@ else
     sudo apt install python3-pip -y
     sudo apt install nginx -y
     sudo apt install gunicorn -y
+    sudo apt install libmysqlclient-dev -y
+    sudo apt install pkg-congif -y
+    pip install django
 fi
 
     python3 -m venv praveen
