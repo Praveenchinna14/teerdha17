@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /var/lib/jenkins/workspace/django
+cd /var/lib/jenkins/workspace/teerdha17
 
 $PWD
 
