@@ -4,7 +4,7 @@ Requires=gunicorn.socket
 After=network.target
 
 [Service]
-User=jenkins
+User=root
 Group=jenkins
 WorkingDirectory=/var/lib/jenkins/workspace/teerdha17/
 ExecStart=/var/lib/jenkins/workspace/teerdha17/praveen/bin/gunicorn \
