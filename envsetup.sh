@@ -14,6 +14,7 @@ else
     sudo apt install supervisor -y
     sudo apt install libmysqlclient-dev -y
     sudo apt install pkg-config -y
+    sudo apt install libpq-dev -y
     
     
 fi
