@@ -5,12 +5,13 @@ After=network.target
 
 [Service]
 User=root
-Group=jenkins
+Group=www-data
 WorkingDirectory=/var/lib/jenkins/workspace/teerdha17/
-ExecStart=/var/lib/jenkins/workspace/teerdha17/praveen/bin/gunicorn \
-          --workers 3 \
-          --bind 127.0.0.1:8000 \
-          Teerdhaproject.wsgi:application
+ExecStart=/var/lib/jenkins/workspace/teerdha17/praveen/bin/gunicorn \ 
+           --workers 1 \
+           --log-level debug \ 
+           --error-logfile /var/lib/jenkins/workspace/teerdha17/error.log \ 
+           --bind unix:/run/gunicorn.sock Teerdhaproject.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
