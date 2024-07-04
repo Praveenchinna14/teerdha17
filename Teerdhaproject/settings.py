@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
          'OPTIONS': {
          'read_default_file': '/path/to/my.cnf',
-        'NAME':'teerdha17',
+        'DATABASE':'teerdha17',
         'PORT':'3306',
         'PASSWORD':'admin123',
         'HOST':'teerdha17.cro2ik468akt.ap-south-1.rds.amazonaws.com',
