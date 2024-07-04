@@ -5,6 +5,7 @@ if command -v virtualenv &> /dev/null; then
     echo "virtualenv is already installed."
 else
     echo "Installing virtualenv......"
+    sudo apt update
     sudo apt install -y python3-virtualenv
     sudo apt install virtualenv -y
     sudo apt install python3-venv -y
