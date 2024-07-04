@@ -3,7 +3,7 @@
 cd /var/lib/jenkins/workspace/teerdha17
 
 sudo cp -rf nginx.conf /etc/nginx/sites-available/
-sudo rm /etc/nginx/sites-enabled/nginx.conf
+#sudo rm /etc/nginx/sites-enabled/nginx.conf
 #sudo ln -s /etc/nginx/sites-available/ /etc/nginx/sites-enabled/nginx.conf
 chmod 710 /var/lib/jenkins/workspace/teerdha17
 
