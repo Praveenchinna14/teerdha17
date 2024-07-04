@@ -8,6 +8,10 @@ source praveen/bin/activate
 pip install django
 pip install gunicorn
 pip install django-rest-framework
+pip install mysqlclient
+pip install requests
+pip install pillow
+pip install psycopg2-binary
 
 python3 manage.py makemigrations
 python3 manage.py migrate
