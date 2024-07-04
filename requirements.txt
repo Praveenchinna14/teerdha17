@@ -39,6 +39,7 @@ platformdirs
 pluggy
 portalocker
 psycopg2
+psycopg2-binary
 py
 pycodestyle
 pyparsing
