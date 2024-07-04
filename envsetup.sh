@@ -44,6 +44,9 @@ pip3 install -r requirements.txt
 echo "Requirements Installed."
 echo -e "\n\n\n"
 
+python3 -c "import psycopg2"
+
+
 echo "Checking for logs"
 if [ -d "logs" ]
 then
