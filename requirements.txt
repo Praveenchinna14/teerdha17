@@ -38,7 +38,7 @@ Pillow
 platformdirs
 pluggy
 portalocker
-psycopg2
+psycopg2-binary
 py
 pycodestyle
 pyparsing
@@ -57,6 +57,7 @@ typed-ast
 typing-extensions
 tzlocal
 urllib3
+wheel
 whitenoise
 xlrd
 xlwt
