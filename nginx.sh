@@ -9,7 +9,7 @@ chmod 710 /var/lib/jenkins/workspace/teerdha17
 
 #sudo sed -i 's/80 default_server/81 default_server/g' /etc/nginx/sites-enabled/default
 
-sudo systemctl restart nginx.service
+sudo systemctl stop nginx.service
 
 echo "Nginx has been started"
 
