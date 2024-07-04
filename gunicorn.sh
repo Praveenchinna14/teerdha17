@@ -5,11 +5,12 @@ cd /var/lib/jenkins/workspace/teerdha17
 $PWD
 
 source praveen/bin/activate
+sudo apt install libmysqlclient-dev -y
+sudo apt install pkg-config -y
 pip install django
 pip install gunicorn
 pip install django-rest-framework
 pip install mysqlclient
-pip  install MySQLdb
 pip install requests
 pip install pillow
 pip install psycopg2-binary
