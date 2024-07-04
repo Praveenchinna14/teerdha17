@@ -13,6 +13,8 @@ else
     sudo apt install gunicorn -y
     sudo apt install supervisor -y
     sudo apt install libmysqlclient-dev -y
+    sudo apt install pkg-config -y
+    
     
 fi
 
