@@ -7,6 +7,7 @@ $PWD
 source praveen/bin/activate
 pip install django
 pip install gunicorn
+pip install django-rest-framework
 
 python3 manage.py makemigrations
 python3 manage.py migrate
