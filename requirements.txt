@@ -38,7 +38,7 @@ Pillow
 platformdirs
 pluggy
 portalocker
-psycopg2-binary
+psycopg2
 py
 pycodestyle
 pyparsing
