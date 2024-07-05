@@ -33,8 +33,8 @@ class cab_update(generics.RetrieveUpdateDestroyAPIView):
 def cab_main(request):
     nav=navbar.objects.all()
     if request.method=="GET":
-        #ad=requests.get("http://13.232.134.82:8000/cab_insert/")
-        res=cab_cards.objects.all() #ad.json()
+        ad=requests.get("http://13.232.134.82:8000/cab_insert/")
+        res=ad.json()
         k3 = cabwhycontents.objects.all()
         b = cab_faq.objects.all()
         return render(request,"cab_templates/cabsearch.html",{'nav':nav,'res':res,'k3':k3,'b':b})
