@@ -73,11 +73,11 @@ def faq_home(request):
 def flights(request):
     if request.method=="GET":
         nav=navbar.objects.all()
-        #ad=requests.get("http://13.232.134.82:8000/flight_home/")
-        res=flights_offercards.objects.all() #ad.json()
+        ad=requests.get("http://13.232.134.82:8000/flight_home/")
+        res=ad.json()
         k3 = flightfaqs.objects.all()
-        #wc = requests.get("http://13.232.134.82:8000/why_choose_lc/")
-        wcu = why_choose.objects.all() #wc.json()
+        wc = requests.get("http://13.232.134.82:8000/why_choose_lc/")
+        wcu = wc.json()
         k =choosing_content.objects.all()     
         return render(request,"flight_templates/c.html",{'nav':nav,'res':res,'k3':k3,'wcu':wcu,'k':k})
 
