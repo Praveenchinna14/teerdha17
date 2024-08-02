@@ -85,7 +85,7 @@ DATABASES = {
         'DATABASE':'teerdha17',
         'PORT':'3306',
         'PASSWORD':'admin123',
-        'HOST':'database-1.cro2ik468akt.ap-south-1.rds.amazonaws.com',
+        'HOST':'teerdha17.ctoc6i4sess4.us-east-2.rds.amazonaws.com',
         'USER':'admin'
     }
 }   
